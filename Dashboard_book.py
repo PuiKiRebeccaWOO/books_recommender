@@ -21,9 +21,9 @@ df = load_data()
 # Map cluster numbers to readable names
 cluster_labels = {
     0: "💡 Hidden Gems",
-    1: "🔥 Popular & Highly Rated",
+    1: "📈 Trending",
     2: "🌟 Moderately Popular",
-    3: "📦 Unrated / Unknown"
+    3: "🔥 Top Picks"
 }
 df["cluster_label"] = df["cluster"].map(cluster_labels)
 
